@@ -1,0 +1,54 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><title>HYMNS Con — Gabapentin Feedback</title><link rel="stylesheet" href="styles.css"></head><body><div class="page landing-shell"><div class="zoom-overlay" id="zoomOverlay"><img class="zoom-logo" src="logo.png" alt="HYMNS logo"></div><div class="wrap zoom-target"><div class="brand"><img src="logo.png" alt="HYMNS logo"><h1 class="brand-title">HYMNS<span>Con</span></h1><p class="brand-sub">Hyderabad Muscle Nerve and<br>Neuroimmunology Society Conference</p><p class="brand-meta">Date: July 24 – 26, 2026</p><p class="brand-meta">Venue: Hotel Taj Deccan, Hyderabad, India</p><button class="hero-button" onclick="location.href='form.html'">Gabapentin Feedback<br>Questionnaire</button></div></div><div class="sponsor-strip"><img src="sponsor-strip.png" alt="Gabapin product sponsors"></div></div><script>
+setTimeout(()=>document.getElementById('zoomOverlay')?.classList.add('done'),1800);
+document.addEventListener("DOMContentLoaded", () => {
+    const zoomIntro = document.getElementById("zoomIntro");
+    const enterBtn = document.getElementById("enterBtn");
+
+    enterBtn.addEventListener("click", async () => {
+
+        try {
+            // Request browser fullscreen
+            await document.documentElement.requestFullscreen();
+
+            // Only continue if fullscreen is actually active
+            if (document.fullscreenElement) {
+
+                // Hide the intro
+                zoomIntro.classList.add("hide");
+
+                // Open your registration page
+                // Replace this with your actual function
+                // showPage("registration");
+
+            } else {
+                alert("Please allow Full Screen mode to continue.");
+            }
+
+        } catch (error) {
+
+            console.error("Fullscreen failed:", error);
+
+            // Do NOT allow the user to continue
+            alert(
+                "Full Screen mode is required to continue. " +
+                "Please click 'Click to Enter' again and allow Full Screen."
+            );
+        }
+
+    });
+});
+</script></body>
+ <div id="zoomIntro" class="zoom-intro">
+  <div id="zoomIntro" class="zoom-intro">
+    <div class="zoom-content">
+        <img src="logo.png" alt="HYMNS Logo">
+
+        <h1>HYMNS Con</h1>
+
+        <p>Welcome to the Feedback Questionnaire</p>
+
+        <button type="button" id="enterBtn" class="enter-btn">
+            Click to Enter
+        </button>
+    </div>
+</div></html>
